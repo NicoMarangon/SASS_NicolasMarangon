@@ -1,0 +1,10 @@
+@import "_nav";
+@import "_main";
+
+/* variables */
+$spacing-1: 24px;
+
+div {
+    padding: $spacing-1;
+    
+}
