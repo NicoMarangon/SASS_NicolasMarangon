@@ -1,0 +1,27 @@
+nav {
+  background-color: blue;
+  padding: 24px;
+}
+nav p {
+  font-size: 2em;
+  color: green;
+}
+
+div {
+  background-color: red;
+}
+div p {
+  font-size: 2em;
+  color: black;
+}
+div p span {
+  font-weight: 600;
+}
+div p span a {
+  text-decoration: none;
+}
+
+/* variables */
+div {
+  padding: 24px;
+}/*# sourceMappingURL=origen.css.map */
