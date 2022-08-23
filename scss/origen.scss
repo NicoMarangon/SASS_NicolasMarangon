@@ -1,10 +1,150 @@
-@import "_nav";
+@import "_header";
 @import "_main";
+@import "_footer";
+@import "_";
 
 /* variables */
 $spacing-1: 24px;
 
-div {
-    padding: $spacing-1;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tox-tinymce{
+    border-radius: 0px !important;
+}
+.tox-notifications-container{
+    display:none !important
+    }
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.container-propio {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.2fr 1.6fr 1.4fr; 
+    grid-template-rows: 0fr 2.4fr 0fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header"
+      "main main main"
+      "footer footer footer"; 
+}
+
+
+@keyframes logo-footer {
+    0% {
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateZ(900deg) ;
+    }
     
+    
+}
+
+ /*----MEDIA QUERY---*/
+
+@media screen and (max-width:950px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+
+    .galeria-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+
+    .grid-container {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .hero p {
+        font-size: 25px;
+        }
+
+    .hero a {
+        text-decoration: none;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .hero-nosotros p {
+        margin: 10px;
+    
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .hero-portfolio p {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 100px;
+    }
+
+    .hero-nosotros {
+        max-width: 100%;
+        height: 50vh;
+    }
+
+    .hero-nosotros p {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 100px;
+    }
+
+    .hero-ideas {
+        max-width: 100%;
+        height: 50vh;
+    }
+
+    .hero-ideas p {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and (max-width:495px) {
+    .header nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+        padding: 10px;
+    }
 }

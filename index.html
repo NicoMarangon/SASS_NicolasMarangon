@@ -1,14 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <!--Link a BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--Link a CSS-->
     <link rel="stylesheet" href="css/estilo.css">
-    <title>SASS_NicoMarangon</title>
+    <!--Titulo-->
+    <title>Proyecto Nicolas Marangon</title>
 </head>
+
 <body>
+    <div class="container-propio">
+        <!-- ESTE ES EL HEADER -->
+        <div class="header">
+            <!-- AQUI COMIENZA EL NAV -->
+            <nav>
+                <a href="index.html">
+                    <img src="images/brain.png" alt="Logo Cerebro">
+                </a>
+                <h1>BAD BRAINS</h1>
+                <ul>
+                    <li><a href="pages/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="pages/ideas.html">IDEAS</a></li>
+                    <li><a href="pages/portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <!-- ESTE ES EL MAIN -->
+    <div class="main">
+        <!-- ESTAS SON LAS SECCIONES -->
+
+        <!-- CAROUSEL -->
+        <section>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/sld1.png" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Artista destacado de Diciembre</h5>
+                            <p>Trabajo realizado por Pedro Martinez.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/sld2.png" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Artista destacado de Noviembre</h5>
+                            <p>Trabajo realizado por Martin Robledo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sld3.png" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Artista destacado de Octubre</h5>
+                            <p>Trabajo realizado por Anita García.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+               <!-- ACCORDION -->
+               <div class="container">
+                <section class="my-2">
+                    <div class="float-end ps-3">
+                        <figure class="figure m-0">
+                            <img src="images/art1.png" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption text-end">Pedro Martinez.</figcaption>
+                          </figure>
+                    </div>
+                    <p>Nadie habrá dejado de observar que con frecuencia el suelo se pliega de manera tal que una parte sube en ángulo recto con el plano del suelo, y luego la parte siguiente se coloca paralela a este plano, para dar paso a una nueva perpendicular, conducta que se repite en espiral o en línea quebrada hasta alturas sumamente variables. Agachándose y poniendo la mano izquierda en una de las partes verticales, y la derecha en la horizontal correspondiente, se está en posesión momentánea de un peldaño o escalón. Cada uno de estos peldaños, formados como se ve por dos elementos, se sitúa un tanto más arriba y adelante que el anterior, principio que da sentido a la escalera, ya que cualquiera otra combinación producirá formas quizá más bellas o pintorescas, pero incapaces de trasladar de una planta baja a un primer piso.</p>
+                    <figure class="text-start">
+                        <blockquote class="blockquote">
+                          <p>Instrucciones para subir una escalera.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Julio Cortazar <cite title="Source Title">Minicuento</cite>
+                        </figcaption>
+                      </figure>
+                    </br>
+                </section>
+                <!-- GRID -->
+                <section>
+                    <div class="container-fluid text-center">
+                        <div class="row">
+                            <div class="col " style="text-align: justify !important;">
+                                <div class="float-start pe-3">
+                                    <figure class="figure m-0">
+                                        <img src="images/art5.png" class="figure-img img-fluid rounded" alt="...">
+                                        <figcaption class="figure-caption text-end">Julio Cortazar.</figcaption>
+                                      </figure>
+                                </div>
+                                <p>Llegado en esta forma al segundo peldaño, basta repetir alternadamente los movimientos hasta encontrarse con el final de la escalera. Se sale de ella fácilmente, con un ligero golpe de talón que la fija en su sitio, del que no se moverá hasta el momento del descenso..</p>
+                                    <figure class="text-end">
+                                        <blockquote class="blockquote">
+                                          <p>ya no se que texto poner.</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                          Julio Cortazor <cite title="Source Title">Minicuento</cite>
+                                        </figcaption>
+                                      </figure>
+
+                            </div>
+                                <div class="col" style="text-align: justify !important;">
+                                                
+                                    <div class="accordion" id="accordionExample">
+                                      <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  PASO #1
+                                              </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                              data-bs-parent="#accordionExample">
+                                              <div class="accordion-body">
+                                                  <strong>Creá tu IDEA.</strong> La creatividad depende solo de vos, es un momento único para ejercitar tu mente... Escribe rápido, escribe pronto, pero ¡No pares de escribir! ¿No te has dado cuenta de que entre más lo piensas menos te decides a escribir? La página en blanco te grita a la cara que eres un indeciso y tú no puedes parar de pensar y pensar. 
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  PASO #2
+                                              </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                              data-bs-parent="#accordionExample">
+                                              <div class="accordion-body">
+                                                  <strong>Ejecuta tu IDEA.</strong> No dejes para mañana lo que puedes hacer hoy. ¡Empieza a escribir creativamente ahora mismo y verás como la inspiración te agarra en el momento! Llega el momento de hacer tus pensamientos una realidad.
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  PASO #3
+                                              </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                              data-bs-parent="#accordionExample">
+                                              <div class="accordion-body">
+                                                  <strong>Comparte tu IDEA.</strong> Utiliza esta oportunidad para desarrollar al máximo tu imaginación, no te encierres a lo que quizá te haya enseñado la escuela o las mismas ciencias frías que frenan la imaginación. Esto  te permite plasmar en algún lugar lo que llevas por dentro. Prueba y verás lo efectivo que es para superarte a ti mismo y transformarte.
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+
+                    </div>
+                </section>
+            </div>
+
+        <section class="productos pt-3">
+            <h2>IDEAS</h2>
+            <div>
+                <div>
+                    <img src="images/img1.jpeg" alt="">
+                    <h3>IDEA 1</h3>
+                    <a href="">MAS INFO</a>
+                </div>
+                <div>
+                    <img src="images/img2.jpg" alt="">
+                    <h3>IDEA 2</h3>
+                    <a href="">MAS INFO</a>
+                </div>
+                <div>
+                    <img src="images/img3.jpg" alt="">
+                    <h3>IDEA 3</h3>
+                    <a href="">MAS INFO</a>
+                </div>
+                <div>
+                    <img src="images/img4.jpg" alt="">
+                    <h3>IDEA 4</h3>
+                    <a href="">MAS INFO</a>
+                </div>
+                <div>
+                    <img src="images/img5.jpg" alt="">
+                    <h3>IDEA 5</h3>
+                    <a href="">MAS INFO</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ESTE ES EL FOOTER -->
+    <div class="footer">
+        <div>
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="images/icons8-advertencia-de-caja-de-cambios-automática-100.png" alt="">
+                </div>
+            </div>
+            <p>by ksvproducciones</p>
+        </div>
+    </div>
     
+    <!-- Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
