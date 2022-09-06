@@ -152,8 +152,8 @@
             background-color: #000000;
             color: #ffffff;
             margin-top: 10px;
-            box-shadow: 4px 5px 8px 2px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: 4px 5px 8px 2px rgba(0, 0, 0, 0.75);
+            box-shadow: 4px 5px 8px 2px rgb(0 0 0 / 75%);
+            -webkit-box-shadow: 4px 5px 8px 2px rgb(0 0 0 / 75%);
             -moz-box-shadow: 4px 5px 8px 2px rgba(0, 0, 0, 0.75);
 
             a {
@@ -175,6 +175,7 @@
                 height: 280px;
             }
         }
+        
     }
 }
 
